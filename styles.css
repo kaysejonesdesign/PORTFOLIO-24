@@ -204,12 +204,25 @@ h3{
 }
 
 /* popups */
+
+#extra img:hover{
+    transition: .125s ease;
+    transform: scale(4);
+    z-index: 2;
+}
+
+#extra img{
+    position: relative;
+    z-index: auto;
+}
+
 #popups img{
     height: 30rem;
     width: auto;
     border: 3px solid var(--black);
 	border-radius: .125rem;
     margin: 5px;
+    z-index: auto;
 }
 
 .modal {
@@ -277,6 +290,8 @@ h3{
     text-decoration: none;
     color: inherit;
 }
+
+
 
 
 /*      CONTACT PAGE      */
