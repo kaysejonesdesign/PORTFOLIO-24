@@ -210,19 +210,26 @@ h3{
 
 /* popups */
 
+#extra{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
 #extra img:hover{
     transition: .125s ease;
-    transform: scale(4);
+    transform: scale(2);
     z-index: 2;
 }
 
 #extra img{
+    height: 20rem !important;
     position: relative;
     z-index: auto;
 }
 
 #popups img{
-    height: 20rem;
+    height: 25rem;
     width: auto;
     border: 3px solid var(--black);
 	border-radius: .125rem;
@@ -252,6 +259,35 @@ h3{
 
 .modal:target {
     display: flex;
+}
+
+#center{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#center img:hover{
+    transition: .125s ease;
+    transform: scale(2);
+    z-index: 2;
+}
+
+#single{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#single img{
+    height: auto;
+    width: 70rem;
+}
+
+#single:hover{
+    transition: .125s ease;
+    transform: scale(1.5);
+    z-index: 2;
 }
 
 .about{
@@ -290,6 +326,10 @@ h3{
    gap: 90px;
    align-items: center;
    justify-content: center;
+   background-color: var(--black);
+   border: 3px solid var(--black);
+   border-radius: .25rem;
+   margin: 0 40px;
 }
 
 #button2{
