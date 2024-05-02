@@ -33,6 +33,7 @@ header, main, footer{
     width: 100%;
     max-width: 1280px;
     margin: auto;
+    border: 3px solid var(--black);
 }
 
 img{
@@ -54,6 +55,7 @@ a{
 header{
     padding: 0;
     background-color: var(--dk-brown);
+    border-bottom: none;
 }
 
 header a:focus{
@@ -162,6 +164,7 @@ h3{
 
 #works{
     background-color: var(--md-brown);
+    border-top: 3px solid var(--black);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -250,6 +253,7 @@ h3{
     padding: 4em 4em;
     border-radius: 2px;
     width: 1280px;
+    border: 3px solid var(--black);
 }
 
 .content h3{
