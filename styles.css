@@ -14,7 +14,7 @@
     --bg: rgba(0, 0, 0, 0.4);
 
     --fonts: 'Montserrat', Arial, sans-serif;    
-    --p-font: 'Nunito', Arial, sans-serif;
+    --p-font: 'Montserrat', Arial, sans-serif;
 }
 
 /* CSS START */
@@ -34,10 +34,6 @@ header, main, footer{
     max-width: 1280px;
     margin: auto;
     border: 3px solid var(--black);
-}
-
-img{
-    /* filter: sepia(40%); */
 }
 
 a{
@@ -129,7 +125,7 @@ h2{
 
 main p{
     font-family: var(--p-font);
-    font-weight: bold;
+    font-weight: 500;
     font-size: 1.5rem;
 }
 
@@ -256,6 +252,11 @@ h3{
     border: 3px solid var(--black);
 }
 
+.content span{
+    font-style: italic;
+    font-weight: 700;
+}
+
 .content h3{
     margin: 40px;
     font-size: 3rem;
@@ -335,6 +336,10 @@ h3{
    border-radius: .25rem;
    margin: 0 40px;
 }
+
+#button2:hover { 
+    color: #e60808 !important; 
+} 
 
 #button2{
     position: relative;
