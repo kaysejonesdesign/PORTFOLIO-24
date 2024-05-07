@@ -140,6 +140,21 @@ main p{
     border-radius: .25rem;
 }
 
+#intsid{
+    display: flex;
+    align-items: center;
+}
+
+#intsid img{
+    width: 15rem;
+    border: 3px solid var(--black);
+	border-radius: .125rem;
+}
+
+#intsid p{
+    margin: 1.5rem 40px 0 0;
+}
+
 h3{
     font-size: 2rem;
     padding: 1rem;
@@ -177,6 +192,7 @@ h3{
     font-size: 2rem;
     padding: 0;
     margin: 0;
+    color: #2f8de6;
 }
 
 /* Print Works Section */
