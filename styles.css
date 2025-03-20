@@ -2,14 +2,14 @@
 
 /* CSS VARIABLES */
 :root{
-    --lt-green: #969696;
+    --lt-green: #210303;
     --md-green: #2f8de6;
     --dk-green: #0b390e;
     --lt-brown: #9c9c9c;
     --md-brown: #6b6b6b;
-    --dk-brown: #292929;
-    --red: #e60808;
-    --white: #d4d4d4;
+    --dk-brown: #210303;
+    --red: #d81d2f;
+    --white: #ffffff;
     --type: #ffffff;
     --black: #000000;
     --bg: rgba(0, 0, 0, 0.4);
@@ -29,12 +29,11 @@ body {
 }
 
 header, main, footer{
-    background-color: var(--white);
     padding: 1rem 0;
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    border: 3px solid var(--black);
+    /* border: 3px solid var(--black); */
 }
 
 a{
@@ -42,7 +41,7 @@ a{
 }
 
 .active{
-    background-color: var(--lt-brown);
+    background-color: var(--red);
    /* border-color: var(--md-green); */
    /* color: var(--dk-green);*/
 }
@@ -91,8 +90,8 @@ nav a{
     color: var(--dk-brown);
 	background-color: var(--white);
 	padding: .75rem;
-	border: 3px solid var(--black);
-	border-radius: .25rem;
+	border: 3px solid var(--dk-brown);
+	/*border-radius: .25rem; */
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -108,10 +107,15 @@ nav a:focus{
 }
 
 header img{
-    width: 100%;
+    width: 400px;
 }
 
 /* Main Styles */
+
+main{
+    background-color: var(--red);
+    padding: 0
+}
 
 #intro, #amen, #esc{
     padding: 0 2rem 2rem 2rem;
@@ -131,29 +135,34 @@ main p{
 }
 
 #intro{
-    margin: 2rem 5rem 1rem 5rem;
+    /* margin: 1rem 1rem 1rem 1rem; 
+    padding: 0 1rem 2rem 1rem; */
+    padding: 0;
+    margin: 0;
 }
 
 #intro h2{
     padding: .5rem 0;
     margin: 0 10rem;
 	background-color: var(--dk-brown);
-    border-radius: .25rem;
+    /* border-radius: .25rem; */
 }
 
 #intsid{
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 #intsid img{
-    width: 15rem;
-    border: 3px solid var(--black);
-	border-radius: .125rem;
+    width: 20rem;
+    align-self: stretch;
+    /* border: 20px solid var(--dk-brown); 8?
+	/* border-radius: .125rem; */
 }
 
 #intsid p{
-    margin: 1.5rem 40px 0 0;
+    margin: 1.5rem 40px 0 2rem;
 }
 
 h3{
@@ -163,8 +172,8 @@ h3{
 
     color: var(--type);
 	background-color: var(--dk-brown);
-    border: 3px solid var(--black);
-    border-radius: .25rem;
+    /* border: 3px solid var(--black);
+    border-radius: .25rem; */
     text-align: center;
 }
 
@@ -199,39 +208,49 @@ h3{
 /* Print Works Section */
 
 #works{
-    background-color: var(--md-brown);
-    border-top: 3px solid var(--black);
+    background-color: var(--white);
+    /* border-top: 3px solid var(--black); */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 15px 0px;
-    padding: 2rem 4rem;
+    gap: 0px 0px;
+    padding: 0;
     align-items: center;
 }
 
 #works h3{
     grid-column: 1/-1;
     grid-row: 1/-1;
+    margin: 0;
+    padding: 2rem
 }
 
 #works p{
     padding: 0 1rem;
 }
 
+#works a{
+    /* padding: 0 1rem 0 3rem; */
+    justify-self: center;
+    align-self: stretch;
+}
+
 #works img{
-    border: 3px solid var(--black);
-	border-radius: .125rem;
-    width: 22rem; 
-    height: 22rem; 
+    border: 10px solid var(--white);
+	/* border-radius: .125rem; */
+    width: 446px; 
+    height: 28rem; 
     object-fit: cover;
     object-position: 35% 35%; 
+    filter: grayscale(100%);
+    align-self: center;
 }
 
 #works img:hover{
-    border: 3px solid var(--md-green);
+    filter: grayscale(0%);
+    border: 10px solid var(--red);
     transition: .25s ease;
     position: relative; 
-    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 2px;
 }
 
 #works div{
@@ -270,8 +289,8 @@ h3{
 #popups img{
     height: 25rem;
     width: auto;
-    border: 3px solid var(--black);
-	border-radius: .125rem;
+    border: 10px hidden var(--black);
+	/* border-radius: .125rem; */
     margin: 5px;
     z-index: auto;
 }
@@ -287,9 +306,9 @@ h3{
 .content {
     background: var(--white);
     padding: 4em 4em;
-    border-radius: 2px;
+    /* border-radius: 2px; */
     width: 1280px;
-    border: 3px solid var(--black);
+    border: 10px solid var(--white);
 }
 
 #side{
@@ -365,8 +384,8 @@ span{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-height: 8rem;
-    border: 3px solid var(--black);
-    border-radius: .25rem;
+    /* border: 3px solid var(--black);
+    border-radius: .25rem; */
 }
 
 .about h5{
@@ -399,8 +418,8 @@ span{
    align-items: center;
    justify-content: center;
    background-color: var(--black);
-   border: 3px solid var(--black);
-   border-radius: .25rem;
+   /* border: 3px solid var(--black);
+   border-radius: .25rem; */
    margin: 0 40px;
 }
 
@@ -415,18 +434,22 @@ span{
     color: inherit;
 }
 
+#button3{
+    border: 5px hidden var(--md-green);
+}
+
 #button3:hover { 
-    border: 3px solid var(--md-green);
-    color: var(--md-green) !important;
+    border: 3px solid var(--red);
+    color: var(--red) !important;
     transition: .25s ease;
     position: relative; 
-    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 2px;
 } 
 
 /* Footer */
 
 footer{
     background-color: var(--dk-brown);
+    padding: 4rem 0 2rem 0
 }
 
 footer p{
