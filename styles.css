@@ -5,7 +5,7 @@
     --lt-green: #210303;
     --md-green: #2f8de6;
     --dk-green: #0b390e;
-    --lt-brown: #9c9c9c;
+    --lt-brown: #efefef;
     --md-brown: #6b6b6b;
     --dk-brown: #210303;
     --red: #d81d2f;
@@ -54,22 +54,23 @@ header{
     border-bottom: none;
 }
 
-header a:focus{
-    outline: 3px solid var(--md-green);
+a.head{
+    height: 140px;
+    /* outline: 3px solid var(--red); */
 }
 
 header div{
     display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    margin: auto 3.5rem;
+    margin: 0;
     gap: 5rem;
 }
 
-h1{
+header img{
     color: var(--type);
     font-size: 3.5rem;
-    width: 500px;
+    height: 140px;
     grid-column: 1/2;
 }
 
@@ -92,7 +93,7 @@ nav a{
 	padding: .75rem;
 	border: 3px solid var(--dk-brown);
 	/*border-radius: .25rem; */
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -103,7 +104,7 @@ nav a:hover{
 }
 
 nav a:focus{
-    outline: 3px solid var(--md-green);
+    outline: 3px solid var(--red);
 }
 
 header img{
@@ -113,7 +114,7 @@ header img{
 /* Main Styles */
 
 main{
-    background-color: var(--red);
+    background-color: var(--lt-brown);
     padding: 0
 }
 
@@ -122,16 +123,15 @@ main{
 }
 
 h2{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
     color: var(--type);
-    border: 3px solid var(--black);
 }
 
 main p{
     font-family: var(--p-font);
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 #intro{
@@ -143,7 +143,7 @@ main p{
 
 #intro h2{
     padding: .5rem 0;
-    margin: 0 10rem;
+    margin: 1rem 10rem;
 	background-color: var(--dk-brown);
     /* border-radius: .25rem; */
 }
@@ -157,12 +157,13 @@ main p{
 #intsid img{
     width: 20rem;
     align-self: stretch;
-    /* border: 20px solid var(--dk-brown); 8?
+    border-left: 20px solid var(--dk-brown); 
 	/* border-radius: .125rem; */
 }
 
 #intsid p{
-    margin: 1.5rem 40px 0 2rem;
+    margin: 1.5rem 7rem 1rem 7rem;
+    color: var(--dk-brown);
 }
 
 h3{
@@ -212,7 +213,7 @@ h3{
     /* border-top: 3px solid var(--black); */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     padding: 0;
     align-items: center;
@@ -222,7 +223,8 @@ h3{
     grid-column: 1/-1;
     grid-row: 1/-1;
     margin: 0;
-    padding: 2rem
+    padding: 2rem 1rem 1rem 1rem;
+    font-size: 2rem;
 }
 
 #works p{
@@ -233,6 +235,7 @@ h3{
     /* padding: 0 1rem 0 3rem; */
     justify-self: center;
     align-self: stretch;
+    height: 468px;
 }
 
 #works img{
@@ -274,11 +277,11 @@ h3{
     justify-content: center;
 }
 
-#extra img:hover{
-    transition: .125s ease;
+/* #extra img:hover{
+     transition: .125s ease;
     transform: scale(2);
-    z-index: 2;
-}
+    z-index: 2; 
+} */
 
 #extra img{
     /*height: 20rem !important;*/
@@ -331,7 +334,13 @@ span{
 
 .content h3{
     margin: 40px;
-    font-size: 3rem;
+    font-size: 1.5rem;
+}
+
+.content p{
+    font-size: 1rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
 }
 
 .modal:target {
@@ -344,11 +353,11 @@ span{
     justify-content: center;
 }
 
-#center img:hover{
-    transition: .125s ease;
+/* #center img:hover{
+     transition: .125s ease;
     transform: scale(2);
-    z-index: 2;
-}
+    z-index: 2; 
+} */
 
 #single{
     margin: auto;
@@ -361,11 +370,11 @@ span{
     width: 65rem;
 }
 
-#single:hover{
+/* #single:hover{
     transition: .125s ease;
     transform: scale(1.25);
     z-index: 2;
-}
+} */
 
 #nohover{
     margin: auto;
@@ -389,13 +398,13 @@ span{
 }
 
 .about h5{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 0;
     margin: 0;
 }
 
 .about p{
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
 }
